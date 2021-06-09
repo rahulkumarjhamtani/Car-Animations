@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CAR Anime 3</title>
+	<link rel="stylesheet" href="car3.css">
+	<script>
+        function imagefun() {
+            var Image_Id = document.getElementById('mycar');
+            if (Image_Id.src.match("Cars/car1.png")) {
+                Image_Id.src = "Cars/car2.png";
+            }
+			else if (Image_Id.src.match("Cars/car2.png")) {
+                Image_Id.src = "Cars/car3.png";
+            }
+			else if (Image_Id.src.match("Cars/car3.png")) {
+                Image_Id.src = "Cars/car4.png";
+            }
+			else if (Image_Id.src.match("Cars/car4.png")) {
+                Image_Id.src = "Cars/car5.png";
+            }
+			else if (Image_Id.src.match("Cars/car5.png")) {
+                Image_Id.src = "Cars/car6.png";
+            }
+			else if (Image_Id.src.match("Cars/car6.png")) {
+                Image_Id.src = "Cars/car7.png";
+            }
+			else if (Image_Id.src.match("Cars/car7.png")) {
+                Image_Id.src = "Cars/car8.png";
+            }
+			else if (Image_Id.src.match("Cars/car8.png")) {
+                Image_Id.src = "Cars/car9.png";
+            }
+			else if (Image_Id.src.match("Cars/car9.png")) {
+                Image_Id.src = "Cars/car10.png";
+            }
+			else if (Image_Id.src.match("Cars/car11.png")) {
+                Image_Id.src = "Cars/car12.png";
+            }
+			else if (Image_Id.src.match("Cars/car12.png")) {
+                Image_Id.src = "Cars/car13.png";
+            }
+            else {
+                Image_Id.src = "Cars/car1.png";
+            }
+        }        
+    </script>
+</head>
+<body>
+	<div id="all">
+		<div id="city"></div>
+		<div id="road"></div>
+		<div id="carbody">
+			<img id="mycar" src="Cars/car1.png"  height=220px width=450px>
+		</div>
+		<div class="tyres">
+			<div id="tyre1"></div>
+			<div id="tyre2"></div>
+		</div>
+		<div>
+			<button id="btn1" onclick="imagefun()">New Car</button>
+            <a href="car5.html"><button id="btn2" onclick="imagefun()">More Options</button></a>
+		</div>
+	</div>
+				
+	
+</body>
+</html>

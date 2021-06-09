@@ -1,0 +1,167 @@
+*
+{
+	margin:0;
+	padding:0;
+}
+/* body
+{
+	background-color:white;
+} */
+.all
+{
+	overflow:hidden;
+}
+#city
+{
+	width:10000%;
+	height:400px;
+	background:url("wp6738561.png") round;
+	background-size:1.5% 123%;
+/* 	animation-name:cityrepeat;
+	animation-duration:15s;
+	animation-iteration-count:infinite;
+	animation-direction:normal;
+	animation-timing-function:linear; */
+	animation-play-state:paused;
+}
+#swift
+{
+	z-index:4;
+	
+}
+#road
+{
+	background:url("road.jpg") round;
+	background-size:1.5% 100%;
+	width:10000%;
+	height:230px;
+	position:absolute;
+	z-index:-1;
+	animation-name:roadrepeat;
+	animation-duration:7s;
+	animation-iteration-count:infinite;
+	animation-direction:normal;
+	animation-timing-function:linear;
+	animation-play-state:paused;
+}
+
+#car
+{
+	width:450px;
+	height:220px;
+	background:url("Cars/car1.png");
+	background-size:100% 100%;
+	margin-left:30%;
+	position:absolute;
+}
+#tyre1
+{
+	width:80px;
+	height:80px;
+	background:url("tyre.png");
+	background-size:100% 100%;
+	position:absolute;
+	margin-top:120px;
+	margin-left:32.9%;
+	animation-name:tyrerotate;
+	animation-duration:0.3s;
+	animation-iteration-count:infinite;
+	animation-direction:linear;
+	animation-play-state:paused;
+}
+#tyre2
+{
+	width:80px;
+	height:80px;
+	background:url("tyre.png");
+	background-size:100% 100%;
+	position:absolute;
+	margin-top:120px;
+	margin-left:53.1%;
+	animation-name:tyrerotate;
+	animation-duration:0.3s;
+	animation-iteration-count:infinite;
+	animation-direction:linear;
+	animation-play-state:paused;
+}
+@keyframes cityrepeat
+{
+	from
+	{
+		margin-left:0;
+		background-repeat:repeat;
+		transform: translate3d(0, 0, 0);
+	}
+	to
+	{
+		margin-left:100%;
+		background-repeat:repeat-x;
+		transform: translate3d(-10000px, 0, 0);
+	}
+}
+@keyframes roadrepeat
+{
+	from
+	{
+		margin-left:0;
+		background-repeat:repeat;
+		transform: translate3d(0, 0, 0);
+	}
+	to
+	{
+		margin-left:100%;
+		background-repeat:repeat-x;
+		transform: translate3d(-10000px, 0, 0);
+	}
+}
+@keyframes tyrerotate
+{
+	from
+	{
+		transform:rotate(0deg);
+	}
+	to
+	{
+		transform:rotate(720deg);
+	}
+}
+#btn1
+{
+	background-color:green;
+	font-size:20px;
+	font-family:cursive;
+	padding:3px;
+	color:white;
+	margin:10px 0px 0px 5px;
+	border-radius:10px;
+}
+#btn2
+{
+	background-color:red;
+	font-size:20px;
+	font-family:cursive;
+	padding:3px 5px 3px 5px;
+	color:white;
+	margin:10px 0px 0px 5px;
+	border-radius:10px;
+}
+#btn3
+{
+	background-color:cyan;
+	font-size:20px;
+	font-family:cursive;
+	padding:3px 5px 3px 5px;
+	color:black;
+	margin:10px 0px 0px 5px;
+	border-radius:10px;
+}
+#btn4
+{
+	background-color:purple;
+	font-size:20px;
+	font-family:cursive;
+	padding:3px 5px 3px 5px;
+	color:yellow;
+	margin:10px 0px 0px 5px;
+	border-radius:10px;
+}

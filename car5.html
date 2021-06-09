@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CAR Anime 5</title>
+	<link rel="stylesheet" href="car5.css">
+	<script>
+		
+		function start() {
+		  document.getElementById("road").style.animationPlayState = "running";
+		  document.getElementById("city").style.animationPlayState = "running";
+		  document.getElementById("tyre1").style.animationPlayState = "running";
+		  document.getElementById("tyre2").style.animationPlayState = "running";
+		}
+		function stop() {
+		  document.getElementById("road").style.animationPlayState = "paused";
+		  document.getElementById("city").style.animationPlayState = "paused";
+		  document.getElementById("tyre1").style.animationPlayState = "paused";
+		  document.getElementById("tyre2").style.animationPlayState = "paused";
+		}
+		function slow() {
+		    document.getElementById("road").style.animationPlayState = "running";
+		  document.getElementById("city").style.animationPlayState = "running";
+		  document.getElementById("tyre1").style.animationPlayState = "running";
+		  document.getElementById("tyre2").style.animationPlayState = "running";
+		  document.getElementById("city").style.animationDuration = "20s";
+		  document.getElementById("road").style.animationDuration = "10s";
+		  document.getElementById("tyre1").style.animationDuration = "0.5s";
+		  document.getElementById("tyre2").style.animationDuration = "0.5s";
+		}
+		function fast() {
+		    document.getElementById("road").style.animationPlayState = "running";
+			document.getElementById("city").style.animationPlayState = "running";
+			document.getElementById("tyre1").style.animationPlayState = "running";
+			document.getElementById("tyre2").style.animationPlayState = "running";
+			document.getElementById("city").style.animationDuration = "10s";
+			document.getElementById("road").style.animationDuration = "5s";
+			document.getElementById("tyre1").style.animationDuration = "0.1s";
+			document.getElementById("tyre2").style.animationDuration = "0.1s";
+		}
+
+	</script>
+</head>
+<body>
+	<div class="all">
+		<div id="city"></div>
+		<div id="road"></div>
+		<div id="swift">
+			<div id="car"></div>
+			<div id="tyre1"></div>
+			<div id="tyre2"></div>
+		</div>
+		
+		<div>
+			<button id="btn1" type="button" onclick="start()">START</button>
+			<button id="btn2" type="button" onclick="stop()">STOP</button>
+			<button id="btn3" type="button" onclick="slow()">SLOW</button>
+			<button id="btn4" type="button" onclick="fast()">FAST</button>
+		</div>
+	</div>
+				
+	
+</body>
+</html>

@@ -1,0 +1,227 @@
+*
+{
+	margin:0;
+	padding:0;
+}
+
+#all
+{
+	overflow:hidden;
+}
+#city
+{
+	width:10000%;
+	height:400px;
+	background:url("wp6738561.png") round;
+	background-size:1.5% 123%;
+	animation-name:cityrepeat;
+	animation-duration:20s;
+	animation-delay:1s;
+	animation-iteration-count:infinite;
+	animation-direction:normal;
+	animation-timing-function:linear;
+}
+#swift
+{
+	z-index:4;
+	
+}
+#road
+{
+	background:url("road.jpg") round;
+	background-size:1.5% 100%;
+	width:10000%;
+	height:230px;
+	position:absolute;
+	z-index:-1;
+	animation-name:roadrepeat;
+	animation-duration:5s;
+	animation-delay:1s;
+	animation-iteration-count:infinite;
+	animation-direction:normal;
+	animation-timing-function:linear;
+}
+#carbody
+{
+	position:absolute;
+	margin-left:30%;
+}
+.carone
+{
+	height:83px;
+	width:200px;
+	position:absolute;
+}
+#mycar1
+{
+	margin-left:1%;
+}
+#mycar2
+{
+	margin-left:28%;
+}
+#mycar3
+{
+	margin-left:50%;
+}
+#mycar4
+{
+	margin-left:80%;
+}
+.tyreone
+{
+	width:35px;
+	height:35px;
+	background:url("tyre.png");
+	background-size:100% 100%;
+	animation-name:tyrerotate;
+	animation-delay:1s;
+	animation-duration:0.2s;
+	animation-iteration-count:infinite;
+	animation-direction:linear;
+	position:absolute;
+	margin-top:45px;
+}
+#tyre1
+{
+	margin-left:2.37%;
+}
+#tyre2
+{
+	margin-left:11.3%;
+}
+#tyre3
+{
+	margin-left:29.3%;
+}
+#tyre4
+{
+	margin-left:38.28%;
+}
+#tyre5
+{
+	margin-left:51.3%;
+}
+#tyre6
+{
+	margin-left:60.3%;
+}
+#tyre7
+{
+	margin-left:81.3%;
+}
+#tyre8
+{
+	margin-left:90.3%;
+}
+.cartwo
+{
+	height:83px;
+	width:200px;
+	position:absolute;
+}
+#mycar5
+{
+	margin-top:120px;
+	margin-left:12%;
+}
+#mycar6
+{
+	margin-top:120px;
+	margin-left:40%;
+}
+#mycar7
+{
+	margin-top:120px;
+	margin-left:72%;
+}
+
+.tyretwo
+{
+	width:35px;
+	height:35px;
+	background:url("tyre.png");
+	background-size:100% 100%;
+	animation-name:tyrerotate;
+	animation-delay:1s;
+	animation-duration:0.2s;
+	animation-iteration-count:infinite;
+	animation-direction:linear;
+	position:absolute;
+	margin-top:165px;
+}
+#tyre9
+{
+	margin-left:13.25%;
+}
+#tyre10
+{
+	margin-left:22.27%;
+}
+#tyre11
+{
+	margin-left:41.3%;
+}
+#tyre12
+{
+	margin-left:50.25%;
+}
+#tyre13
+{
+	margin-left:73.32%;
+}
+#tyre14
+{
+	margin-left:82.31%;
+}
+.btn
+{
+	background-color:purple;
+	font-size:20px;
+	font-family:cursive;
+	padding:3px;
+	color:yellow;
+	margin:10px 0px 0px 5px;
+	border-radius:10px;
+}
+@keyframes cityrepeat
+{
+	from
+	{
+		margin-left:0;
+		background-repeat:repeat;
+		transform: translate3d(0, 0, 0);
+	}
+	to
+	{
+		margin-left:100%;
+		background-repeat:repeat-x;
+		transform: translate3d(-10000px, 0, 0);
+	}
+}
+@keyframes roadrepeat
+{
+	from
+	{
+		margin-left:0;
+		background-repeat:repeat;
+		transform: translate3d(0, 0, 0);
+	}
+	to
+	{
+		margin-left:100%;
+		background-repeat:repeat-x;
+		transform: translate3d(-10000px, 0, 0);
+	}
+}
+@keyframes tyrerotate
+{
+	from
+	{
+		transform:rotate(0deg);
+	}
+	to
+	{
+		transform:rotate(360deg);
+	}
+}
